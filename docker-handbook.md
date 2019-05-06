@@ -14,3 +14,7 @@ Remove a docker image,
 ````
 docker rmi <ImageId>
 ````
+
+references:
+https://github.com/jakewright/tutorials/tree/master/docker/02-docker-compose
+https://www.youtube.com/watch?v=Qw9zlE3t8Ko
