@@ -14,6 +14,10 @@ Remove a docker image,
 ````
 docker rmi <ImageId>
 ````
+Remove all stopped images:
+````
+rmi $(docker images -q)
+````
 
 references:
 https://github.com/jakewright/tutorials/tree/master/docker/02-docker-compose
