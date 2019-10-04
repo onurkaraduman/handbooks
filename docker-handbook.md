@@ -3,7 +3,7 @@ https://docs.docker.com/v17.09/engine/installation/linux/docker-ce/ubuntu/
 
 Create a Docker image,
 ````
-docker build -t <DockerImageName> -f <DockerFilePath> 
+docker build -t <DockerImageName> .
 ````
 List Docker images (active or passive - not running),
 ````
