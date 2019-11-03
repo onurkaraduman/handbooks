@@ -22,3 +22,16 @@ to
 
 platformNativeScriptDynamic({createFrameOnBootstrap: true}).bootstrapModule(AppComponentModule);
 ```
+
+*Problem*
+```
+$ ng generate component bottomBar
+An unhandled exception occurred: Cannot find module '@schematics/angular/utility/parse-name'
+```
+
+*Solution*
+
+```
+npm install  @nativescript/schematics --save
+npm install @angular/cli --save
+```
