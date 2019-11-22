@@ -1,4 +1,4 @@
-*Stream Api*
+## Stream Api
 * The following line of code can have java.util.ConcurrentModificationException. Exception happens in collect method. 
 ```
 List<String> collect = list.stream().collect(Collectors.toList());
@@ -9,7 +9,7 @@ List<String> collect = list.stream().collect(Collectors.toList());
 -Djavax.net.debug=all
 
 
-# SSl Mutual Authentication
+### SSl Mutual Authentication
 These are the overall steps that take place during SSL handshake:
 
 * Client initiates the request.
