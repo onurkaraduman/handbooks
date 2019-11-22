@@ -3,3 +3,7 @@
 ```
 List<String> collect = list.stream().collect(Collectors.toList());
 ```
+
+
+## SSL Handshake debug log
+-Djavax.net.debug=all
