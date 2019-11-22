@@ -1,1 +1,0 @@
-https://trips.lastminute.de
