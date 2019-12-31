@@ -18,3 +18,12 @@ These are the overall steps that take place during SSL handshake:
 * If client authentication is enabled at server side, the server requests’s for client’s certificate.
 * The client sends its own certificate which is found from its keystore.
 * The server verifies the client’s certificate if it can be trusted. If the client’s certificate or its CA’s certificate are found in its truststore, then the client is authenticated.
+
+
+## Proxy Authentication
+
+// This property is needed for proxy authentication after java 8
+```
+if (!PropertiesHelper.isSystemPropertySet("jdk.http.auth.tunneling.disabledSchemes")) {
+		PropertiesHelper.setSystemProperty("jdk.http.auth.tunneling.disabledSchemes", "");
+```
