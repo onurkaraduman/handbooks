@@ -32,3 +32,4 @@ if (!PropertiesHelper.isSystemPropertySet("jdk.http.auth.tunneling.disabledSchem
 ## Caching
 useful links
 * https://hazelcast.com/blog/architectural-patterns-for-caching-microservices/
+* https://labs.consol.de/de/java-caches/part-4-3-client-server-with-hazelcast/index.html
