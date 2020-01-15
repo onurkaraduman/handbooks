@@ -27,3 +27,8 @@ These are the overall steps that take place during SSL handshake:
 if (!PropertiesHelper.isSystemPropertySet("jdk.http.auth.tunneling.disabledSchemes")) {
 		PropertiesHelper.setSystemProperty("jdk.http.auth.tunneling.disabledSchemes", "");
 ```
+
+
+## Caching
+useful links
+* https://hazelcast.com/blog/architectural-patterns-for-caching-microservices/
