@@ -3,8 +3,8 @@ check the destination from https://www.who.int/ and Ministry of Foreigh Affairs 
 
 
 ## Tours
-https://trips.lastminute.de
-https://www.weg.de
+* https://trips.lastminute.de
+* https://www.weg.de
 
 
 * Fantastic things to do
