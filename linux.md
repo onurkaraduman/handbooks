@@ -18,3 +18,8 @@ du -sh *
 ```
 du -sk * | sort -n
 ```
+
+## Passing arguments to grep 
+```
+grep ".noname" application.properties | awk '{print substr($1,0,index($1,".prod"))}' | xargs -I{} grep {} application2.properties 
+```
