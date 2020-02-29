@@ -23,3 +23,8 @@ du -sk * | sort -n
 ```
 grep ".noname" application.properties | awk '{print substr($1,0,index($1,".prod"))}' | xargs -I{} grep {} application2.properties 
 ```
+
+## Grep two file and diff
+```
+diff <(grep "vm.args" test1.txt) <(grep "vm.args" test2.txt )
+```
