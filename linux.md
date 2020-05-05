@@ -28,3 +28,7 @@ grep ".noname" application.properties | awk '{print substr($1,0,index($1,".prod"
 ```
 diff <(grep "vm.args" test1.txt) <(grep "vm.args" test2.txt )
 ```
+## Show cpu usage for each thread
+```
+top -n 1 -H -p <pid>
+```
