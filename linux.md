@@ -32,3 +32,42 @@ diff <(grep "vm.args" test1.txt) <(grep "vm.args" test2.txt )
 ```
 top -n 1 -H -p <pid>
 ```
+## Freeing Disk Space
+https://itsfoss.com/free-up-space-ubuntu-linux/ 
+
+Get rid of packages that are no longer required
+```
+sudo apt-get autoremove
+```
+
+ Clean up APT cache in Ubuntu
+ where cache is
+ ```
+ sudo du -sh /var/cache/apt 
+ ```
+ 
+ clean up
+```
+sudo apt-get clean
+```
+
+Clear systemd journal logs [Intermediate knowledge]
+see usage
+```
+journalctl --disk-usage
+```
+clean up (older than 3d)
+```
+sudo journalctl --vacuum-time=3d
+```
+
+Uninstall Unused Applications Through the Command Line
+list all deb packages
+```
+dpkg --list
+```
+
+remove specific package
+```
+sudo apt-get purge “package-name”
+```
