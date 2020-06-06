@@ -71,3 +71,16 @@ remove specific package
 ```
 sudo apt-get purge “package-name”
 ```
+
+## If Else condition
+```
+[ "$3" -lt 480 ] -- numeric comparison, compatible with all POSIX shells
+[ "$3" \< 480 ] -- string comparison (generally wrong for numbers!), compatible with all POSIX shells
+[[ $3 < 480 ]] -- string comparison (generally wrong for numbers!), bash and ksh only
+(( $3 < 480 )) -- numeric comparison, bash and ksh only
+(( var < 480 )) -- numeric comparison, bash and ksh only, where $var is a variable containing a number
+```
+*example*
+```
+if ((2 < 4)); then echo 'ok'; fi
+```
