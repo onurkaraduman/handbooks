@@ -36,3 +36,16 @@ useful links
 
 ## Log4j
 * https://mkyong.com/logging/log4j-hello-world-example/
+
+## Date Operations
+Set next hour, check the following operations: 
+
+```
+91	        private Date getBeginningOfNextHour() {
+ 	 	92	                Calendar c = Calendar.getInstance();
+ 	 	93	                c.setTime(new Date());
+ 	 	94	                c.set(Calendar.MINUTE, 0);
+ 	 	95	                c.set(Calendar.SECOND, 0);
+ 	 	96	                c.set(Calendar.MILLISECOND, (int) TimeUnit.HOURS.toMillis(rolloverTimeInHours));
+
+```
