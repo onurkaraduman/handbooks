@@ -49,3 +49,10 @@ Set next hour, check the following operations:
  	 	96	                c.set(Calendar.MILLISECOND, (int) TimeUnit.HOURS.toMillis(rolloverTimeInHours));
 
 ```
+
+## Strings
+https://dzone.com/articles/java-memory-management
+In this case, we actually see that we have two different objects on the heap. If we consider that the computed String will be used quite often, we can force the JVM to add it to the string pool by adding the .intern() method at the end of computed string:
+```
+String localPrefix = new Integer(297).toString().intern();
+```
