@@ -56,3 +56,6 @@ In this case, we actually see that we have two different objects on the heap. If
 ```
 String localPrefix = new Integer(297).toString().intern();
 ```
+
+## Encoding
+https://www.baeldung.com/java-char-encoding
