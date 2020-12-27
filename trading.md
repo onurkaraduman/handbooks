@@ -7,3 +7,7 @@ https://www.tefas.gov.tr/FonKarsilastirma.aspx
 
 # Terms
 *VIOP*: Borsa İstanbul Vadeli İşlem ve Opsiyon Piyasası
+
+# Brokers
+https://trade.oanda.com/
+https://tradingstation.fxcm.com/
