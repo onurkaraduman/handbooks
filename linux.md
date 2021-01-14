@@ -98,4 +98,7 @@ example:
 ```
 server example-ntp.onurkaraduman.com iburst
 ```
-
+then restart ntp service
+```
+sudo /etc/init.d/ntp restart
+```
